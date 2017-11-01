@@ -1,0 +1,21 @@
+<h1> List of Scooters</h1>
+
+<a>+Add New Scooter</a>
+
+<table>
+  <tr>
+    <th>Id</th>
+    <th>Name</th>
+    <th>Color</th>
+    <th>Speed</th>
+    <th>Engine CC</th>
+  </tr>
+  <tr *ngFor="let scooter of scooters">
+    <td>{{scooter.id}}</td>
+    <td>{{scooter.name}}</td>
+    <td>{{scooter.color}}</td>
+    <td>{{scooter.maxSpeed}}</td>
+    <td>{{scooter.engineCC}}</td>
+  </tr>
+
+</table>
